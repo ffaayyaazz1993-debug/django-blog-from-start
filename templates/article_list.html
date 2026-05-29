@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for article in article_list %}
+  <div class="article-entry">
+    <h2><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h2>
+    <p class="article-meta">by {{ article.author }} | {{ article.date }}</p>
+    <p>{{ article.body }}</p>
+    <p class="article-actions">
+      <a href="{% url 'article_edit' article.pk %}">Edit</a>
+      <a href="{% url 'article_delete' article.pk %}">Delete</a>
+    </p>
+  </div>
+{% endfor %}
+{% endblock content %}

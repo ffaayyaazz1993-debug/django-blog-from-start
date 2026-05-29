@@ -2,3 +2,5 @@
 __pycache__/
 *.sqlite3
 *.pyc
+Chapter 14 - *.pdf
+make_chapter14_*_pdf.py
