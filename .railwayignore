@@ -3,6 +3,7 @@ __pycache__/
 *.sqlite3
 *.pyc
 .env
+.git/
 staticfiles/
 Chapter 14 - *.pdf
 make_chapter14_*_pdf.py
