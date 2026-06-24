@@ -24,7 +24,7 @@ env.read_env()
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.str("SECRET_KEY")
+SECRET_KEY = env.str("SECRET_KEY", default="django-insecure-x4sdfWGT7eZm5F3weeTpDF_8mcbDu8LNxjlL8ND18TXh3PkX72g3yi-rPkoRsh9BBBw")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
@@ -35,6 +35,7 @@ ALLOWED_HOSTS = env.list(
         ".fly.dev",
         ".railway.app",
         ".up.railway.app",
+        ".onrender.com",
         "localhost",
         "127.0.0.1",
     ],
