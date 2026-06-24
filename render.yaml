@@ -17,7 +17,7 @@ services:
           name: django-blog-db
           property: connectionString
       - key: SECRET_KEY
-        generateValue: true
+        value: "GSf6DXB6Q0NEPNFh4AePilCEEyvIWSYpO8XPWD3LBGl0oHFDPCV1Vn9r9vd0nOdczyM"
       - key: DEBUG
         value: "False"
       - key: WEB_CONCURRENCY
